@@ -9,7 +9,7 @@ typedef struct node {
 	struct node *lchild;
 	struct node *rchild;
 }BTNode;
-void CreateBTree(BTNode * &b, char *str, char str1[15][20])//create tree
+void CreateBTree(BTNode * &b, char *str, char str1[15][30])//create tree
 {
 	BTNode *St[MAX], *p;
 	int top = -1, k, j = 0,s=0; 
@@ -84,7 +84,7 @@ int main()
 	printf("Hello, World!\n");
 	BTNode *p; char x;
 	char str[] = "A(B(F(,G(,H(,I))),C(J(,K),D(L(,M(,N)),E(O)))))";
-	char str1[15][20] = {"信电学院", "计算机类","软件工程","物联网工程","数字媒体技术","计算机科学与技术","数学类","数学与应用数学","信息与计算科学","电子类","通信工程","电子科学与技术","电子信息工程","物理类","应用物理学"};
+	char str1[15][30] = {"信电学院", "计算机类","软件工程","物联网工程","数字媒体技术","计算机科学与技术","数学类","数学与应用数学","信息与计算科学","电子类","通信工程","电子科学与技术","电子信息工程","物理类","应用物理学"};
 	CreateBTree(p, str,str1);
 	PreOrder(p);
 	printf("请输入任一专业的大类编号：\n");
