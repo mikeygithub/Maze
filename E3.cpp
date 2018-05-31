@@ -88,16 +88,13 @@ int main()
 	CreateBTree(p, str,str1);
 	PreOrder(p);
 	printf("请输入任一专业的大类编号：\n");
-	while (true) {
 		scanf("%c", &x);
 		if (FindNode(p, x)) {
 			PrintFind(FindNode(p, x));
 			printf("专业个数：%d\n", num);
-			num= 0;
 		}
 		else {
 			printf("查找不到，请检查输入的编号\n");
 		}
-	}
 return 0;
 }
